@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brella</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ff0000">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style-min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="" class="header__logo-link">
+                        <img src="./img/svg/logo-ico.svg" alt="Give your team peace of mind with supplemental health insurance from Brella.">
+                    </a>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#plan" class="header__link">Our Plan</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#employers" class="header__link">Employers</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#brokers" class="header__link">Brokers</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#members" class="header__link">Members</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#about" class="header__link">About</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#blog" class="header__link">Blog</a>
+                        </li>
+                    </ul>
+                    <div class="header__nav-close">
+                        <span class="header__nav-close-line"></span>
+                        <span class="header__nav-close-line"></span>
+                    </div>
+                </nav>
+                <button class="header__button">Request a demo</button>
+                <div class="login-form">
+                    <div class="login-form_open" onclick="openForm()">Login</div>
+
+                    <div class="form-popup" id="myForm">
+                    <form action="../action_page.php" class="form-container">
+
+                        <label for="mail"><b>email</b></label>
+                        <input id="mail" type="text" placeholder="Your email" name="email" required>
+
+                        <label for="psw"><b>password</b></label>
+                        <input id="psw" type="password" placeholder="Your password" name="psw" required>
+
+                        <button type="submit" class="btn">Login</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                    </div>
+
+                </div>
+                <div class="header__language">
+                    <span class="header__language-en">EN</span>
+                </div>
+                <div class="header__burger burger">
+                    <span class="burger__line burger__line-first"></span>
+                    <span class="burger__line burger__line-second"></span>
+                    <span class="burger__line burger__line-third"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="intro">
+            <div class="wrapper__min">
+                <h1 class="intro__title">Give your team peace of mind with supplemental health insurance from Brella.</h1>
+                <p class="intro__subtitle">I'm wondering...</p>
+                <form class="sesarch-form">
+                    <fieldset class="search-form_wrap">
+                        <p class="search-form_info">
+                            <input type="text" class="search-form_field" placeholder="how Brella's plan works">
+                            <button type="submit" class="search-form_submit">Find out</button>
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="advantages" id="brokers">
+            <div class="wrapper__min">
+                <div class="advantages__cards">
+                    <div class="advantages__card">
+                        <div class="advantages__card-pic">
+                            <img src="./img/svg/advantage-ico-1.svg" alt="More coverage">
+                        </div>
+                        <div class="advantages__card-info">
+                            <h2 class="advantages__card-title">More coverage</h2>
+                            <p class="advantages__card-desc">Brella covers 13,000+ injuries and illnesses from concussions to cancer.</p>
+                        </div>
+                    </div>
+                    <div class="advantages__card">
+                        <div class="advantages__card-pic">
+                            <img src="./img/svg/advantage-ico-2.svg" alt="More coverage">
+                        </div>
+                        <div class="advantages__card-info">
+                            <h2 class="advantages__card-title">Less hassle</h2>
+                            <p class="advantages__card-desc">One easy-to-manage plan with paperless install and online admin tools.</p>
+                        </div>
+                    </div>
+                    <div class="advantages__card">
+                        <div class="advantages__card-pic">
+                            <img src="./img/svg/advantage-ico-3.svg" alt="More coverage">
+                        </div>
+                        <div class="advantages__card-info">
+                            <h2 class="advantages__card-title">Faster benefits</h2>
+                            <p class="advantages__card-desc">Brella pays claims in hours–not weeks so your people can rest easy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="health">
+            <div class="wrapper__min">
+                <div class="health__cards">
+                    <div class="health__card">
+                        <h3 class="health__card-title">Why Brella?</h3>
+                        <p class="health__card-desc">Today, any health insurance deductible can feel like a high deductible.</p>
+                        <p class="health__card-benefits">Brella's supplemental health plan enhances your health benefit strategy to ensure that health hardships don't become financial burdens.</p>
+                        <a href="#!" class="health__card-link">See our plan</a>
+                    </div>
+                    <div class="health__card info">
+                        <div class="info__left">
+                            <p class="info__left-procent">60%</p>
+                            <p class="info__left-desc">of Americans would have to borrow to cover an unexpected $1000 expense</p>
+                        </div>
+                        <div class="info__right">
+                            <img src="./img/info-pic-1-min.png" alt="Deductible" class="info__right-pic">
+                            <span class="info__right-desc">Deductible</span>
+                            <span class="info__right-desc">Annual Max</span>
+                            <p class="info__right-research">2020 individual averages (Source: KFF)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brings" id="members">
+            <div class="wrapper">
+                <div class="brings__cards">
+                    <div class="brings__card custom">
+                        <h3 class="brings__card-title">brella brings</h3>
+                        <p class="brings__card-benefits">Customizable benefits</p>
+                        <ul class="brings__card-benefits-list">
+                            <li class="brings__card-benefits-item">Paperless install & admin</li>
+                            <li class="brings__card-benefits-item">Effortless enrollment</li>
+                            <li class="brings__card-benefits-item">Easy claims experience</li>
+                            <li class="brings__card-benefits-item">Fast benefit payouts</li>
+                            <li class="brings__card-benefits-item">Concierge support</li>
+                        </ul>
+                    </div>
+                    <div class="brings__card brings-info">
+                        <p class="brings__card-desc">Every Brella plan comes with a benefit for Moderate, Severe, and Catastrophic conditions. Employees can select the payout amounts that fit their needs and their budget.</p>
+                        <p class="brings__card-desc">Employers can fund part or all of the premiums—or offer Brella as a voluntary benefit. The choice is up to you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="plan" id="plan">
+            <div class="wrapper__min">
+                <div class="plan__cards">
+                    <div class="plan__card">
+                        <p class="plan__card-head">one plan, more coverage</p>
+                        <h3 class="plan__card-title">No one can predict which health issues might come their way.</h3>
+                        <p class="plan__card-desc">Our broad supplemental coverage gets rid of the guesswork and puts cash in your team’s pockets for most conditions that require urgent medical attention.</p>
+                    </div>
+                    <div class="plan__card">
+                        <div class="plan__card-pic">
+                            <img src="./img/plan-1-min.jpg" alt="one plan, more coverage">
+                        </div>
+                    </div>
+                </div>
+                <div class="plan__cards-bottom">
+                    <div class="card__bottom">
+                        <p class="card__bottom-head">5K</p>
+                        <p class="card__bottom-desc">covered injuries and illnesses from fractures and appendicitis to cancer</p>
+                    </div>
+                    <div class="card__bottom">
+                        <p class="card__bottom-head">1X</p>
+                        <p class="card__bottom-desc">more covered conditions than Accident and Critical Illness plans—combined</p>
+                    </div>
+                    <div class="card__bottom">
+                        <p class="card__bottom-head">40%</p>
+                        <p class="card__bottom-desc">plans are 100% guaranteed issue. No medical underwriting required</p>
+                    </div>
+                    <div class="card__bottom">
+                        <p class="card__bottom-head">0</p>
+                        <p class="card__bottom-desc">Zero limitations or exclusions for pre-existing conditions</p>
+                    </div>
+                </div>
+                <div class="member__cards">
+                    <div class="member__card">
+                        <div class="member__card-pic">
+                            <img src="./img/member-1-min.jpg" alt="a better claims experience">
+                        </div>
+                    </div>
+                    <div class="member__card">
+                        <p class="member__card-head">a better claims experience</p>
+                        <h3 class="member__card-title">Give your people a plan that pays in hours—not weeks.</h3>
+                        <p class="member__card-desc">Your team can’t wait for peace of mind. Brella pays on diagnosis, so members can file a claim sooner and get paid faster via our Member Portal or mobile app.</p>
+                        <a href="#!" class="member__card-video">Play Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="employers" id="employers">
+            <div class="wrapper__min">
+                <div class="employers__card">
+                    <p class="employers__card-head">for employers</p>
+                    <h3 class="employers__card-title">Easy enrollment meets simple administration.</h3>
+                    <p class="employers__card-desc">Brella brings 100% paperless implementation, enrollment, and admin. Plug into our platforms or we’ll plug into yours.</p>
+                    <a href="#!" class="employers__card-more">Learn more</a>
+                </div>
+            </div>
+        </div>
+        <section class="slider">
+            <div class="wrapper__min">
+                <h4 class="slider__title">Proudly backed by</h4>
+                <div class="slider__container">
+                    <div class="slider__line">
+                        <div class="slider__line-slide">
+                            <img src="./img/brand-ico-1-min.png" alt="brand">
+                        </div>
+                        <div class="slider__line-slide">
+                            <img src="./img/brand-ico-2-min.png" alt="brand">
+                        </div>
+                        <div class="slider__line-slide">
+                            <img src="./img/brand-ico-3-min.png" alt="brand">
+                        </div>
+                        <div class="slider__line-slide">
+                            <img src="./img/brand-ico-4-min.png" alt="brand">
+                        </div>
+                        <div class="slider__line-slide">
+                            <img src="./img/brand-ico-1-min.png" alt="brand">
+                        </div>
+                        <div class="slider__line-slide">
+                            <img src="./img/brand-ico-3-min.png" alt="brand">
+                        </div>
+                        <div class="slider__line-slide">
+                            <img src="./img/brand-ico-4-min.png" alt="brand">
+                        </div>
+                    </div>
+                </div>
+                <a class="slider__prev">
+                    <img src="./img/svg/arrow-ico-2.svg" alt="">
+                </a>
+                <a class="slider__next">
+                    <img src="./img/svg/arrow-ico-2.svg" alt="">
+                </a>
+            </div>
+        </section>
+        <div class="about" id="about">
+            <div class="wrapper__min">
+                <div class="about__cards">
+                    <div class="about__card">
+                        <div class="about__card-pic">
+                            <img src="./img/about-pic-1-min.jpg" alt="Podcast">
+                        </div>
+                        <p class="about__card-head">Podcast</p>
+                        <h4 class="about__card-title">Better Voluntary Benefits with NFP Voluntary Benefits Practice Leader, Kim Heald</h4>
+                    </div>
+                    <div class="about__card">
+                        <div class="about__card-pic">
+                            <img src="./img/about-pic-2-min.jpg" alt="Insurance Innovation">
+                        </div>
+                        <p class="about__card-head">Insurance Innovation</p>
+                        <h4 class="about__card-title">How to Design Simpler Insurance Benefits</h4>
+                    </div>
+                    <div class="about__card">
+                        <div class="about__card-pic">
+                            <img src="./img/about-pic-3-min.jpg" alt="Benefits Strategy">
+                        </div>
+                        <p class="about__card-head">Benefits Strategy</p>
+                        <h4 class="about__card-title">Executive Benefits Outlook with Dan Aceti</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blog" id="blog">
+            <div class="wrapper">
+                <div class="blog__container">
+                    <div class="blog__container-pic">
+                        <img src="./img/blog-pic-1-min.jpg" alt="Let’s talk.">
+                    </div>
+                    <div class="blog__container-info">
+                        <p class="blog__container-title">Ready to explore Brella’s supplemental health solution?</p>
+                        <p class="blog__container-title">Let’s talk.</p>
+                        <button class="blog__container-button">Get in touch</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="wrapper__min">
+            <div class="footer__block">
+                <div class="footer__block-item">
+                    <div class="footer__logo">
+                        <img src="./img/svg/logo-footer-ico.svg" alt="Brella" class="footer__logo-pic">
+                    </div>
+                    <ul class="footer__nav">
+                        <li class="footer__nav-item">
+                            <h4 class="footer__nav-title">Join Brella</h4>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#plan" class="footer__nav-link">Our Plan</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#employers" class="footer__nav-link">Employers</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#brokers" class="footer__nav-link">Brokers</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#members" class="footer__nav-link">Members</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__nav">
+                        <li class="footer__nav-item">
+                            <h4 class="footer__nav-title">Company</h4>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#about" class="footer__nav-link">About</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#blog" class="footer__nav-link">Blog</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#!" class="footer__nav-link">Careers</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#!" class="footer__nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__block-sign">
+                    <p class="footer__block-sign-title">Get the latest</p>
+                    <p class="footer__block-sign-desc">Sign up to receive benefits news and insights in your inbox once a month.</p>
+                    <form action="#!" class="footer__mail-form">
+                        <input type="email" placeholder="Email*" class="footer__mail-input">
+                        <button type="submit" class="footer__mail-button">
+                            <img src="./img/svg/arrow-mail-ico.svg" alt="Get the latest">
+                        </button>
+                    </form>
+                    <div class="footer__social-link">
+                        <a href="#!" class="footer__social-item">
+                            <img src="./img/svg/linkedin-ico.svg" alt="linkedin">
+                        </a>
+                        <a href="#!" class="footer__social-item">
+                            <img src="./img/svg/twitter-ico.svg" alt="twitter">
+                        </a>
+                        <a href="#!" class="footer__social-item">
+                            <img src="./img/svg/youtube-ico.svg" alt="youtube">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+    <script src="./js/main-es6.js"></script>
+</body>
+</html>
