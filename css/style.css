@@ -102,6 +102,7 @@
     left: 0;
     z-index: 999;
     transition: .4s linear;
+    background: white;
   }
 
 /* WRAPPERS START */
@@ -1170,6 +1171,9 @@
   }
   .health__card:first-child {
     margin-bottom: 60px;
+  }
+  .info__right-research {
+    text-align: left;
   }
   .brings {
     margin-bottom: 80px;
