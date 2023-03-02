@@ -1018,11 +1018,13 @@
 
 .footer__mail-form {
   margin-bottom: 30px;
+  display: flex;
 }
 
 .footer__mail-input {
   width: 276px;
   height: 50px;
+  box-sizing: border-box;
   background: #214E41;
   border: 1px solid #FFFFFF;
   padding-left: 20px;
@@ -1039,11 +1041,10 @@
 }
 
 .footer__mail-button {
-  height: 54px;
+  height: 50px;
   border: none;
   background-color: white;
   padding: 0 20px;
-  margin-left: -4px;
 }
 
 .footer__mail-button:hover, .footer__mail-button :focus {
@@ -1209,7 +1210,7 @@
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 415px) {
   .header__wrapper {
     padding: 20px 15px;
   }
