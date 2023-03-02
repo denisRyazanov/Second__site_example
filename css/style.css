@@ -333,10 +333,16 @@
 }
 
 .search-form_field {
+ box-sizing: border-box;
  height: 60px;
  border-radius: 6px 0 0 6px;
  border: none;
  padding-left: 20px;
+}
+
+.search-form_info {
+  display: flex;
+  align-items: center;
 }
 
 .search-form_field::placeholder {
@@ -349,7 +355,8 @@
 }
 
 .search-form_submit {
-  height: 62.5px;
+  width: 100px;
+  height: 60px;
   background: #43806C;
   font-family: 'Raleway';
   font-style: normal;
@@ -359,7 +366,6 @@
   color: white;
   border: none;
   border-radius: 0 6px 6px 0;
-  padding: 20px 35px 19px;
   margin-left: -5px;
 }
 
