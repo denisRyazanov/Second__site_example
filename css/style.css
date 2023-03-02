@@ -1222,6 +1222,7 @@
   }
   .header__logo {
     margin-right: 150px;
+    margin-left: 40%;
   }
   .login-form_open {
     margin-right: 20px;
@@ -1306,7 +1307,7 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .header__burger {
     left: 280px;
     top: -25px;
