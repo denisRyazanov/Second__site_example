@@ -240,8 +240,8 @@
 .form-popup {
   display: none;
   position: fixed;
-  top: 90px;
-  right: 130px;
+  top: 104px;
+  left: 15px;
   border: 2px solid #62a08b;
   z-index: 9;
 }
@@ -542,7 +542,12 @@
 
 .info__right-pic {
   margin-bottom: 20px;
-  padding-right: 50%;
+}
+
+.info__right-container {
+  width: 196px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .info__right-desc {
@@ -553,8 +558,6 @@
   line-height: 22px;
   text-align: center;
   color: #214E41;
-  padding-left: 5px;
-  padding-right: 38px;
 }
 
 .info__right-research {
@@ -1068,11 +1071,9 @@
 
 /* MEDIA STYLES START */
 
-@media screen and (max-width: 960px) {
-
-  .header__logo {
-    margin-right: 100px;
-    margin-bottom: 50px;
+@media screen and (max-width: 1024px) {
+  .header__wrapper {
+    padding: 20px;
   }
   .brings__cards {
     grid-template-columns: repeat(1, 1fr);
@@ -1110,12 +1111,15 @@
 
 @media screen and (max-width: 768px){
   .header__wrapper {
-    padding-top: 35px;
     justify-content: flex-start;
+  }
+  .header__logo {
+    margin-right: 100px;
+    margin-bottom: 50px;
   }
   .header__burger {
     display: block;
-    left: 140px;
+    left: 180px;
   }
   .header__logo {
     margin-bottom: 0;
@@ -1149,7 +1153,7 @@
     height: 40px;
     position: absolute;
     top: 20px;
-    left: 60%;
+    left: 75%;
     z-index: 11;
   }
   .header__nav-close-line {
@@ -1218,7 +1222,7 @@
 
 @media screen and (max-width: 415px) {
   .header__wrapper {
-    padding: 20px 15px;
+    padding: 20px 0;
   }
   .header__logo {
     margin-right: 150px;
@@ -1228,7 +1232,11 @@
     margin-right: 20px;
   }
   .header__burger {
-    left: 30px;
+    left: 50px;
+    top: 5px
+  }
+  .header__nav-close {
+    left: 60%;
   }
   .intro {
     padding-top: 140px;
@@ -1253,6 +1261,9 @@
   .employers__card-more::after {
     width: 100px;
   }
+  .health {
+    margin-bottom: 80px;
+  }
   .health__card {
     text-align: center;
     padding-right: 0;
@@ -1268,12 +1279,14 @@
     margin-top: 0;
     text-align: center;
   }
-  .info__right-pic {
-    padding-right: 25%;
-    padding-left: 25%;
+  .info__right-container {
+    margin: 0 auto;
   }
-  .info__right-desc:first-child {
-    padding-left: 25%;
+  .info__right {
+    padding: 0;
+  }
+  .info__right-research {
+    text-align: center;
   }
   .brings__card {
     padding: 10px;
@@ -1309,8 +1322,7 @@
 
 @media screen and (max-width: 376px) {
   .header__burger {
-    left: 280px;
-    top: -25px;
+    left: 15px;
   }
 }
 /* MEDIA STYLES END */

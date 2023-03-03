@@ -13,7 +13,7 @@
     <meta name="msapplication-TileColor" content="#ffc40d">
     <meta name="theme-color" content="#ff0000">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-min.css">
 </head>
 <body>
     <header class="header">
@@ -144,8 +144,10 @@
                         </div>
                         <div class="info__right">
                             <img src="./img/info-pic-1-min.png" alt="Deductible" class="info__right-pic">
-                            <span class="info__right-desc">Deductible</span>
-                            <span class="info__right-desc">Annual Max</span>
+                            <div class="info__right-container">
+                                <span class="info__right-desc">Deductible</span>
+                                <span class="info__right-desc">Annual Max</span>
+                            </div>
                             <p class="info__right-research">2020 individual averages (Source: KFF)</p>
                         </div>
                     </div>
@@ -378,7 +380,6 @@
         function openForm() {
           document.getElementById("myForm").style.display = "block";
         }
-        
         function closeForm() {
           document.getElementById("myForm").style.display = "none";
         }
