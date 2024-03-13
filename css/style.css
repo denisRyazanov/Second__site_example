@@ -190,7 +190,7 @@
     position: relative;
     left: 20px;
     border: none;
-    background-color: #214e41;
+    background-color: #fff;
     font-weight: 700;
     cursor: pointer;
   }
@@ -300,7 +300,7 @@
   font-size: 13px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #214E41;
+  color: #49806c;
 }
 
 .header__language:hover {
