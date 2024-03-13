@@ -185,7 +185,7 @@
   .header__button:hover {
     background-color: #1d6950;
   }
-  .footer__language-list {
+  .header__language-list {
     display: block;
     position: relative;
     left: 20px;
