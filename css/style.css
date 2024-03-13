@@ -185,6 +185,15 @@
   .header__button:hover {
     background-color: #1d6950;
   }
+  .footer__language-list {
+    display: block;
+    position: relative;
+    left: 20px;
+    border: none;
+    background-color: #214e41;
+    font-weight: 700;
+    cursor: pointer;
+  }
 
   .header__burger {
     display: none;
