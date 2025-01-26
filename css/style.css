@@ -1130,11 +1130,12 @@
     display: none;
   }
   .blog__container {
-    grid-template-columns: repeat(1, 1fr);
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(1, 1fr); */
   }
-  .blog__container-info {
+  /* .blog__container-info {
     padding: 80px 200px 80px 120px;
-  }
+  } */
   .blog__container-pic {
     margin: 0 auto;
   }
@@ -1244,6 +1245,7 @@
     margin-bottom: 80px;
   }
   .member__cards {
+    padding-bottom: 50px;
     flex-wrap: wrap;
   }
   .employers__card {
@@ -1265,7 +1267,7 @@
   }
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 430px) {
   .header__wrapper {
     padding: 20px 0;
   }
