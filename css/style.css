@@ -109,13 +109,13 @@
 
   .wrapper {
     position: relative;
-    /* max-width: 1440px; */
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 15px;
   }
 
   .wrapper__min {
-    /* position: relative; */
+    position: relative;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
@@ -201,6 +201,7 @@
   }
 
   .header__language-list {
+    font-size: 14px;
     color: #214E41;
     /* display: block;
     position: relative; */
@@ -210,6 +211,10 @@
     /* font-weight: 700; */
     cursor: pointer;
   }
+
+  /* .header__language-list option {
+    font-size: 14px;
+  } */
 
   .header__language-list:hover {
     color: #43806C;
@@ -397,9 +402,12 @@
 }
 
 .advantages__cards {
-  display: grid;
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  /* display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 16px;
+  column-gap: 16px; */
   padding: 50px;
   background-color: white;
   transform: translateY(-50%);
@@ -734,9 +742,13 @@
 }
 
 .member__cards {
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  gap: 50px;
+  /* display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 50px;
+  column-gap: 50px; */
 }
 
 .member__card {
@@ -829,7 +841,7 @@
 
 .slider__container {
   margin: 0 auto;
-  width: 1020px;
+  max-width: 1020px;
   height: 60px;
   overflow: hidden;
 }
@@ -923,12 +935,12 @@
 }
 
 .blog__container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+
 }
 
 .blog__container-info {
-  padding: 144px 177px 96px 120px;
+  padding: 50px;
 }
 
 .blog__container-title {
@@ -1215,13 +1227,24 @@
     padding: 100px;
   }
   .plan__cards {
-    grid-template-columns: repeat(1, 1fr);
-    column-gap: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     margin-bottom: 60px;
+    /* grid-template-columns: repeat(1, 1fr);
+    column-gap: 40px;
+    margin-bottom: 60px; */
   }
+  .plan__card-pic img {
+    width: 100%;
+  }
+
   .plan__cards-bottom {
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 80px;
+  }
+  .member__cards {
+    flex-wrap: wrap;
   }
   .employers__card {
     width: 350px;
@@ -1236,6 +1259,9 @@
   }
   .footer__block-item {
     margin-bottom: 40px;
+  }
+  .advantages__cards {
+    flex-wrap: wrap;
   }
 }
 
@@ -1260,11 +1286,12 @@
   .intro {
     padding-top: 140px;
   }
-  .member__cards {
+  /* .member__cards {
+    flex-wrap: wrap;
     grid-template-columns: repeat(1, 1fr);
     row-gap: 50px;
-    margin-bottom: 50px;
-  }
+    margin-bottom: 50px; 
+  } */
   .member__card {
     text-align: center;
   }
@@ -1337,6 +1364,7 @@
     grid-template-columns: repeat(1, 1fr);
     row-gap: 50px;
   }
+  
 }
 
 @media screen and (max-width: 376px) {
