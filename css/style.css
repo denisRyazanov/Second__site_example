@@ -109,13 +109,13 @@
 
   .wrapper {
     position: relative;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     margin: 0 auto;
     padding: 0 15px;
   }
 
   .wrapper__min {
-    position: relative;
+    /* position: relative; */
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
@@ -125,21 +125,21 @@
 
   .header__wrapper {
     font-family: 'Raleway';
-    margin: 0 auto;
+    /* margin: 0 auto; */
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
     background: white;
-    padding: 10px 45px 30px;
+    padding: 20px 30px;
   }
   
   .header__logo {
-    margin-right: 308px;
+    /* margin-right: 308px; */
   }
 
   .header__nav {
-    margin-right: 69px;
+    /* margin-right: 69px; */
   }
 
   .header__list {
@@ -177,22 +177,42 @@
     border: none;
     border-radius: 6px;
     color: white;
-    margin-right: 29px;
-    position: relative;
-    top: 10px;
+
+    /* margin-right: 29px; */
+    /* position: relative; */
+    /* top: 10px; */
   }
 
   .header__button:hover {
     background-color: #1d6950;
   }
+
+  .header__language {
+    /* font-weight: 700; */
+    /* font-size: 13px; */
+    /* line-height: 20px; */
+    text-transform: uppercase;
+    color: #49806c;
+  }
+  
+  .header__language:hover {
+    cursor: pointer;
+    color: #43806C;
+  }
+
   .header__language-list {
-    display: block;
-    position: relative;
-    left: 20px;
+    color: #214E41;
+    /* display: block;
+    position: relative; */
+    /* left: 20px; */
     border: none;
     background-color: #fff;
-    font-weight: 700;
+    /* font-weight: 700; */
     cursor: pointer;
+  }
+
+  .header__language-list:hover {
+    color: #43806C;
   }
 
   .header__burger {
@@ -242,7 +262,7 @@
   color: #214E41;
   padding-right: 20px;
   background: url(../img/svg/arrow-ico.svg) no-repeat center right;
-  margin-right: 40px;
+  /* margin-right: 40px; */
 }
 
 /* form login start */
@@ -294,20 +314,6 @@
 }
 
 /* form login end */
-
-.header__language {
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #49806c;
-}
-
-.header__language:hover {
-  cursor: pointer;
-  color: #43806C;
-}
-
 
 /* INTRO STYLES START */
 
@@ -870,13 +876,17 @@
 }
 
 .about__card {
-  width: 355px;
+  max-width: 400px;
 }
 
 .about__cards {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 70px;
+  column-gap: 70px; */
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .about__card-pic {
