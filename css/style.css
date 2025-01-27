@@ -1277,16 +1277,16 @@
     padding: 20px 0;
   }
   .header__logo {
-    margin-right: 150px;
+    margin-right: 200px;
     /* margin-left: 40%; */
   }
   .login-form_open {
     margin-right: 20px;
   }
-  .header__burger {
+  /* .header__burger {
     left: 50px;
     top: 5px
-  }
+  } */
   .header__nav-close {
     left: 60%;
   }
