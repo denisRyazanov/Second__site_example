@@ -1143,7 +1143,7 @@
 
 @media screen and (max-width: 768px){
   .header__wrapper {
-    justify-content: flex-start;
+    justify-content: space-between;
   }
   .header__logo {
     margin-right: 100px;
@@ -1151,7 +1151,7 @@
   }
   .header__burger {
     display: block;
-    left: 20%;
+    left: 3%;
   }
   .header__logo {
     margin-bottom: 20px;
